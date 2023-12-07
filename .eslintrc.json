@@ -1,0 +1,70 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "standard-with-typescript",
+    "plugin:react/recommended",
+    "plugin:tailwindcss/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-native",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "import/prefer-default-export": "off",
+    "react/state-in-constructor": "off",
+    "react/static-property-placement": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/prop-types": "off",
+    "no-param-reassign": "off",
+    "no-console": "off",
+    "tailwindcss/no-custom-classname": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/consistent-type-definitions": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-confusing-void-expression": "off",
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/method-signature-style": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/no-magic-numbers": [
+      "error",
+      {
+          "ignoreArrayIndexes": true,
+          "ignoreDefaultValues": true,
+          "ignoreEnums": true,
+          "ignoreReadonlyClassProperties": true,
+          "ignoreNumericLiteralTypes": true,
+          "ignore": [
+              -1,
+              0,
+              1
+          ]
+      }
+    ]
+  }
+}

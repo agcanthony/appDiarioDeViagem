@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "appAgendaViagem",
+    "slug": "appAgendaViagem",
+    "version": "1.0.1",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-screen.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#B6BDEE"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "versionCode": 1,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#B6BDEE"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Melhore sua experiência! Conceda-nos acesso às suas fotos"
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Permita que $(PRODUCT_NAME) acesse suas fotos.",
+          "savePhotosPermission": "Permita que $(PRODUCT_NAME) salve fotos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Permita que $(PRODUCT_NAME) use seu Face ID."
+        }
+      ]
+    ]
+  }
+}
